@@ -1,0 +1,281 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Pengaturan Untuk header*/
+.wrapper{
+    width: 1100px;
+    margin:auto;
+    position: relative;
+}
+
+.logo a{
+    float: left;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: courier;
+    color: #704F4F;
+}
+
+.menu{
+    float: right;
+}
+
+header{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    background-color: #F3E0B5 ;
+    z-index: 1;
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+header ul li{
+    float: left;
+}
+
+header ul li a{
+    color: #704F4F;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+/*Pengaturan Untuk Section*/
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom{
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+.kolom .deskripsi{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    color: #704F4F;
+}
+
+.kolom p{
+    font-family: monospace;
+    font-size: 15px;
+    color: #704F4F;
+}
+h2{
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #704F4F;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-orange{
+    background-color: #A77979 ;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-orange:hover{
+    background-color: #E38B29;
+    text-decoration: none;
+}
+
+a.tbl-brown{
+    background-color: #E38B29 ;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-brown:hover{
+    background-color:#A77979 ;
+    text-decoration: none;
+}
+
+p{
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+/*Pengaturan Untuk Kelas Members*/
+
+.bagiantengah{
+    text-align: center;
+    width: 100%;
+}
+
+.member-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.foto-member{
+    width: 20%;
+    margin: 0 auto;
+    
+}
+
+.foto-member img{
+    width: 80%;
+}
+
+.foto-member p{
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #704F4F;
+}
+
+/*Pengaturan Untuk Kelas Profil*/
+.profil-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.biodata-members{
+    width: 20%;
+    
+}
+.biodata-members p{
+    font-family: monospace;
+    padding: 1px;
+
+}
+
+/*Pengaturan Untuk Contact*/
+#contact{
+    background: #efe8dd;
+    width: 100%;
+    
+}
+
+/*Pengaturan Untuk Footer*/
+.footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;  
+}
+
+.footer-section{
+    width: 20%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.footer-section p{
+    padding: 5px;
+    font-family: monospace;
+}
+h3{
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #704F4F;
+    width: 100%;
+    line-height: 50px;
+}
+
+/*Pengaturan Untuk copyright*/
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 0px;
+    background: #FFF5E4;
+
+}
+
+
+/*Pengaturan Untuk Responsif Ke Semua Layar*/
+
+@media screen and (max-width: 1000px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .logo a{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    header.menu{
+        width: 100%;
+        margin: 0;
+    }
+
+    header .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    header .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section{
+        display: block;
+    }
+
+    section img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .foto-member {
+        width: 50%;
+    }
+
+    .biodata-members {
+        width: 50%;
+    }
+}
